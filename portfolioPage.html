@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <script src="https://kit.fontawesome.com/bec01d8631.js" crossorigin="anonymous"></script>
+
+        <title>Profile Page</title>
+    </head>
+
+<body>
+
+</div>   
+<style>
+.accordion {
+  background-color: #eee;
+  color: rgb(44, 168, 112);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: double;
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+
+    <button class="accordion btn btn-dark">
+        <h1>Hi I'm Eitan Fire</h1>     
+        <h2>I am a school teacher who is interested in social justice and the role of science and technology in the classroom.</h2>
+   
+    </button>
+<div class="panel">
+  <div class=container>
+    <div class="row">
+        <div class="col-fluid"><img class="d-flex flex-row-reverse ml-3 img-thumbnail" src="img/Eitans-portfolio-page-picture.png"></img>
+
+        </div>
+        <div class="col col-fluid">
+<h3>Let me tell you a little bit about myself.</h3> 
+ 
+ <p>I grew up in Boulder, Colorado. I attended Foothill Elementary, Centennial Middle School and graduated from Boulder High School. I attended St. John’s College for my undergraduate studies. I took a year off in between my sophomore and junior year of college and worked on a kibbutz in Israel. There I had the chance to stock shelves in a store, dig ditches, tend gardens, and I even took care of animals in a petting zoo!</p>
+ 
+<p>At the end of college I met, Haley, the love of my life and the woman who would become my wife. She liked me at first but she did not fall madly in love with me until I won a pie eating contest. I continued to pursue my interest in becoming a teacher by working at the Santa Fe Children’s Museum and at the Boys & Girls Club. Haley and I moved to Oregon together and lived there for several years while she finished college. I went to graduate school to learn how to become a better teacher at Lewis & Clark College.</p>
+     
+   <p>Haley and I moved back to my hometown of Boulder, Colorado in 2010. During the week you will find me teaching social studies at September High School. Thank you for welcoming me. I look forward to learning more about you.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button class="accordion btn btn-success">Leadership in Education</button>
+<div class="panel">
+  <p>EDUCATION 
+    Lewis & Clark College                                        Master of Arts in Teaching, June 2009                                     
+    St. John's College, Santa Fe                                 Bachelor of Arts in Liberal Arts, 2006     
+    
+    QUALIFICATIONS
+    12 years of classroom teaching experience.
+
+    Endorsed to teach Social Studies and English at the middle and high school level.
+    ★ Colorado Professional Teacher License  #240550
+    Intermediate knowledge of Hebrew and basic knowledge of Spanish.
+
+    • Boulder County Latino History Project • The University of Colorado in Boulder                     Dec. 2014 - Present
+Nominated to join a leadership group dedicated to the study of local Latino history and hired to create a curriculum on the subject for school teachers in their classrooms.
+• Mentor Teacher • September School                                                   			           Aug. 2019 - June 2020
+Mentored a student teacher in becoming a successful educator.
+    </p>
+</div>
+
+<button class="accordion btn btn-outline-warning">Competency in Innovation</button>
+<div class="panel">
+  <p>An apprentice of HTML, CSS, Javascript, Ruby + Rail, React + Native</p>
+  <p>21st Century Teacher Cohort • Boulder Valley School District                                               Dec. 2012 - Dec. 2015
+Selected to join a dynamic team of educators to collaboratively develop and lead the district’s integration of technology into the classroom. Trusted to choose and help guide the use of nearly $3,000 worth of technology tools.
+</p>
+</div>
+
+<div class=container>
+    <div class=row>
+        <a role="button" class="btn btn-primary btn-lg ml-auto position-sticky" href="mailto:eitanfire@gmail.com"><i class="fa fa-envelope-o"></i> Get in Touch</a>
+
+        <div class="col-6">
+</div>
+    </div>
+        </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
